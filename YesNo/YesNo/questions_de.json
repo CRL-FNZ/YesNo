@@ -50,6 +50,81 @@
     "category": "culturaGenerale"
   },
   {
+    "text": "Der Eiffelturm steht in London?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Der Mount Everest ist der höchste Berg der Welt?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Die Sahara ist die größte Wüste der Welt?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Der Euro ist die offizielle Währung Deutschlands?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Japan hat mehr Einwohner als die USA?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Der Amazonas ist der längste Fluss der Welt?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Die italienische Flagge ist grün, weiß und rot?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Peking ist die Hauptstadt von China?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Australien ist sowohl ein Kontinent als auch ein Land?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Kanada grenzt an Mexiko?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Die Schweiz ist Mitglied der Europäischen Union?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Das Kolosseum steht in Rom?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Der tiefste See der Welt ist der Gardasee?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Die Währung des Vereinigten Königreichs ist das Pfund?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Es gibt 7 Kontinente auf der Erde?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
     "text": "Menschen haben 23 Chromosomenpaare?",
     "answer": true,
     "category": "scienzaNatura"
@@ -97,6 +172,81 @@
   {
     "text": "Das menschliche Gehirn nutzt nur 10% seiner Kapazität?",
     "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Jupiter ist der größte Planet im Sonnensystem?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Die rechte und linke Lunge sind gleich groß?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Diamant ist die härteste natürliche Substanz?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Spinnen sind Insekten?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Menschliches Blut ist immer rot?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Wale sind Fische?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Saturn hat Ringe?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Schall kann sich im Vakuum ausbreiten?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Bienen können menschliche Gesichter erkennen?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Fledermäuse sind blind?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Sauerstoff ist das häufigste Element in der Erdatmosphäre?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Glas ist eine amorphe Flüssigkeit?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Ein Lichtjahr ist eine Entfernungseinheit?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Delfine schlafen mit einem offenen Auge?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Die niedrigste mögliche Temperatur ist -273,15°C?",
+    "answer": true,
     "category": "scienzaNatura"
   },
   {
@@ -150,6 +300,81 @@
     "category": "popCulture"
   },
   {
+    "text": "Mario Bros ist eine Figur von Sony?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Der Herr der Ringe wurde von J.R.R. Tolkien geschrieben?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Die Serie 'Breaking Bad' spielt in New York?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Elvis Presley ist als der King of Rock and Roll bekannt?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Der Film 'Der Pate' wurde von Steven Spielberg gedreht?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Minecraft ist das meistverkaufte Videospiel aller Zeiten?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Die Star-Wars-Saga wurde von George Lucas erschaffen?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Spider-Man ist eine Figur von DC Comics?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Adele ist eine britische Sängerin?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Die Serie 'Stranger Things' spielt in den 90er Jahren?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Batman hat keine Superkräfte?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Netflix wurde als DVD-Verleih gegründet?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Der Film 'Frozen' ist von Pixar?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Ed Sheeran ist Australier?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Die Serie 'Haus des Geldes' ist spanisch?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
     "text": "Der Zweite Weltkrieg begann 1939?",
     "answer": true,
     "category": "storia"
@@ -197,6 +422,56 @@
   {
     "text": "Die Mondlandung fand 1972 statt?",
     "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "Rom wurde 753 v. Chr. gegründet?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Marco Polo war Spanier?",
+    "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "Das Weströmische Reich fiel 476 n. Chr.?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Die Pest traf Europa im 15. Jahrhundert?",
+    "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "Galileo Galilei wurde von der Inquisition angeklagt?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Die amerikanische Unabhängigkeitserklärung wurde 1776 unterzeichnet?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Italien wurde 1946 eine Republik?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Julius Cäsar war der erste römische Kaiser?",
+    "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "Die Schlacht von Waterloo wurde von Napoleon gewonnen?",
+    "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "Die Renaissance hatte ihren Ursprung in Italien?",
+    "answer": true,
     "category": "storia"
   }
 ]

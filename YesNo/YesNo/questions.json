@@ -50,6 +50,81 @@
     "category": "culturaGenerale"
   },
   {
+    "text": "La Torre Eiffel si trova a Londra?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Il Monte Everest è la montagna più alta del mondo?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Il Sahara è il deserto più grande del mondo?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "L'euro è la valuta ufficiale della Germania?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Il Giappone ha più abitanti degli Stati Uniti?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Il Rio delle Amazzoni è il fiume più lungo del mondo?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "La bandiera italiana è verde, bianca e rossa?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Pechino è la capitale della Cina?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "L'Australia è sia un continente che una nazione?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Il Canada confina con il Messico?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "La Svizzera fa parte dell'Unione Europea?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Il Colosseo si trova a Roma?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Il lago più profondo del mondo è il lago di Garda?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "La moneta del Regno Unito è la sterlina?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Ci sono 7 continenti sulla Terra?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
     "text": "Gli umani hanno 23 coppie di cromosomi?",
     "answer": true,
     "category": "scienzaNatura"
@@ -100,6 +175,81 @@
     "category": "scienzaNatura"
   },
   {
+    "text": "Giove è il pianeta più grande del sistema solare?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "I polmoni destro e sinistro sono della stessa dimensione?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Il diamante è la sostanza naturale più dura?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "I ragni sono insetti?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Il sangue umano è sempre rosso?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Le balene sono pesci?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Saturno ha degli anelli?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Il suono può viaggiare nel vuoto?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Le api possono riconoscere i volti umani?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "I pipistrelli sono ciechi?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "L'ossigeno è l'elemento più abbondante nell'atmosfera terrestre?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Il vetro è un liquido amorfo?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Un anno luce è una misura di distanza?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "I delfini dormono con un occhio aperto?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "La temperatura più bassa possibile è -273,15°C?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
     "text": "Harry Potter è una serie di libri scritta da J.K. Rowling?",
     "answer": true,
     "category": "popCulture"
@@ -146,6 +296,81 @@
   },
   {
     "text": "La canzone 'Bohemian Rhapsody' è dei Queen?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Mario Bros è un personaggio creato da Sony?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Il Signore degli Anelli è stato scritto da J.R.R. Tolkien?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "La serie 'Breaking Bad' è ambientata a New York?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Elvis Presley è conosciuto come il Re del Rock and Roll?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Il film 'Il Padrino' è diretto da Steven Spielberg?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Minecraft è il videogioco più venduto di sempre?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "La saga di Star Wars è stata creata da George Lucas?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Spider-Man è un personaggio della DC Comics?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Adele è una cantante britannica?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "La serie 'Stranger Things' è ambientata negli anni '90?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Il personaggio di Batman non ha superpoteri?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Netflix è stata fondata come servizio di noleggio DVD?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Il film 'Frozen' è della Pixar?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Ed Sheeran è australiano?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "La serie 'La Casa di Carta' è spagnola?",
     "answer": true,
     "category": "popCulture"
   },
@@ -221,6 +446,56 @@
   },
   {
     "text": "La Magna Carta fu firmata nel 1215?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Roma fu fondata nel 753 a.C.?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Marco Polo era spagnolo?",
+    "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "L'Impero Romano d'Occidente cadde nel 476 d.C.?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "La peste nera colpì l'Europa nel XV secolo?",
+    "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "Galileo Galilei fu processato dall'Inquisizione?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "La Dichiarazione di Indipendenza americana fu firmata nel 1776?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "L'Italia divenne una repubblica nel 1946?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Giulio Cesare fu il primo imperatore romano?",
+    "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "La battaglia di Waterloo fu vinta da Napoleone?",
+    "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "Il Rinascimento ebbe origine in Italia?",
     "answer": true,
     "category": "storia"
   }

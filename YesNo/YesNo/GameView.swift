@@ -12,12 +12,10 @@ struct GameView: View {
     @State private var countdown = 5
     @State private var readyTimer: Timer?
 
-    @State private var leftOpacity = 0.4
-    @State private var rightOpacity = 0.4
-
-    @State private var progress = 0.0
-    @State private var animTimer: Timer?
+    @State private var confirmProgress: CGFloat = 0.0
     @State private var currentAnimColor: Color? = nil
+    @State private var lastUpdateTime: Date? = nil
+    private let baseDuration: TimeInterval = 3.0
 
     private var currentQuestion: Question? {
         guard gameState.currentQuestionIndex < gameState.questions.count else { return nil }
@@ -44,10 +42,25 @@ struct GameView: View {
         .onChange(of: motionManager.rotation) { _, rot in
             let newColor = abs(rot) > 0.174 ? (rot < 0 ? Color.green : Color.red) : nil
             if newColor != currentAnimColor {
-                if let color = newColor {
-                    startAnim(color)
+                if newColor != nil {
+                    lastUpdateTime = Date()
+                    confirmProgress = 0
                 } else {
-                    resetAnim()
+                    lastUpdateTime = nil
+                    confirmProgress = 0
+                }
+                currentAnimColor = newColor
+            }
+            if let last = lastUpdateTime, currentAnimColor != nil {
+                let now = Date()
+                let dt = now.timeIntervalSince(last)
+                lastUpdateTime = now
+                // abs(rot) va da ~0.174 (10°) a ~1.57 (90°), mappiamo a speed 0.2x..3x
+                let tiltRatio = min((abs(rot) - 0.174) / (1.57 - 0.174), 1.0)
+                let speed = 0.2 + tiltRatio * 2.8
+                confirmProgress = min(confirmProgress + CGFloat(dt * speed / baseDuration), 1.0)
+                if confirmProgress >= 1.0 {
+                    validateAnswer()
                 }
             }
         }
@@ -99,24 +112,21 @@ struct GameView: View {
                     }
                 )
 
-                if abs(motionManager.rotation) > 0.174 {
-                    if motionManager.rotation < 0 {
-                        Circle().fill(Color.green.opacity(rightOpacity)).frame(width: 300, height: 300).mask(
-                            Path { p in
-                                p.move(to: CGPoint(x: 150, y: 150))
-                                p.addArc(center: CGPoint(x: 150, y: 150), radius: 150, startAngle: .degrees(-90), endAngle: .degrees(90), clockwise: false)
-                                p.closeSubpath()
-                            }
-                        )
-                    } else {
-                        Circle().fill(Color.red.opacity(leftOpacity)).frame(width: 300, height: 300).mask(
-                            Path { p in
-                                p.move(to: CGPoint(x: 150, y: 150))
-                                p.addArc(center: CGPoint(x: 150, y: 150), radius: 150, startAngle: .degrees(90), endAngle: .degrees(270), clockwise: false)
-                                p.closeSubpath()
-                            }
-                        )
-                    }
+                if let color = currentAnimColor {
+                    let isGreen = color == .green
+                    let startAngle: Double = isGreen ? -90 : 270
+                    let endAngle = isGreen ? startAngle + 180 * confirmProgress : startAngle - 180 * confirmProgress
+                    Circle().fill(color).frame(width: 300, height: 300).mask(
+                        Path { p in
+                            p.move(to: CGPoint(x: 150, y: 150))
+                            p.addArc(center: CGPoint(x: 150, y: 150), radius: 150,
+                                     startAngle: .degrees(startAngle),
+                                     endAngle: .degrees(endAngle),
+                                     clockwise: !isGreen)
+                            p.closeSubpath()
+                        }
+                    )
+                    .animation(.linear(duration: 0.05), value: confirmProgress)
                 }
 
                 Image(systemName: "arrow.up")
@@ -183,28 +193,9 @@ struct GameView: View {
         readyTimer = nil
     }
 
-    private func startAnim(_ color: Color) {
-        animTimer?.invalidate()
-        progress = 0.0
-        currentAnimColor = color
-        if color == .green {
-            rightOpacity = 1.0; leftOpacity = 0.4
-        } else {
-            leftOpacity = 1.0; rightOpacity = 0.4
-        }
-        animTimer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { t in
-            progress += 0.05 / 2.0
-            let op = 1.0 - (1.0 * progress)
-            if color == .green { rightOpacity = op } else { leftOpacity = op }
-            if progress >= 1.0 { t.invalidate(); validateAnswer() }
-        }
-    }
-
     private func resetAnim() {
-        animTimer?.invalidate()
-        progress = 0.0
+        lastUpdateTime = nil
+        confirmProgress = 0
         currentAnimColor = nil
-        leftOpacity = 0.4
-        rightOpacity = 0.4
     }
 }
