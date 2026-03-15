@@ -2,6 +2,8 @@ import SwiftUI
 
 struct HomeView: View {
     @Binding var currentView: ViewType
+    @State private var showCodeAlert = false
+    @State private var secretCode = ""
 
     var body: some View {
         VStack {
@@ -37,23 +39,26 @@ struct HomeView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
                 }
-
-                Button(action: {
-                    currentView = .burkard
-                }) {
-                    HStack {
-                        Image(systemName: "person.2.fill")
-                        Text("Burkard")
-                    }
-                    .font(.title)
-                    .padding()
-                    .frame(maxWidth: 220)
-                    .background(Color.yellow.opacity(0.9))
-                    .foregroundColor(.black)
-                    .cornerRadius(10)
-                }
+                .simultaneousGesture(
+                    LongPressGesture(minimumDuration: 3)
+                        .onEnded { _ in
+                            secretCode = ""
+                            showCodeAlert = true
+                        }
+                )
             }
             Spacer()
+        }
+        .alert("Codice segreto", isPresented: $showCodeAlert) {
+            TextField("Inserisci codice", text: $secretCode)
+                .autocorrectionDisabled()
+                .textInputAutocapitalization(.never)
+            Button("OK") {
+                if secretCode.lowercased() == "regina" {
+                    currentView = .burkard
+                }
+            }
+            Button("Annulla", role: .cancel) {}
         }
     }
 }
