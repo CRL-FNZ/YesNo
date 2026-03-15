@@ -1,0 +1,227 @@
+[
+  {
+    "text": "La capitale dell'Italia è Roma?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Il sole gira intorno alla Terra?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "L'acqua bolle a 100°C?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Il mare Mediterraneo è il più grande oceano?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Cristoforo Colombo scoprì l'America nel 1492?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "La Grande Muraglia è visibile dalla Luna?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Il corpo umano ha 206 ossa?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Il pianeta più vicino al Sole è Venere?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "La lingua ufficiale del Brasile è il portoghese?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Il simbolo chimico dell'oro è Au?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Gli umani hanno 23 coppie di cromosomi?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Il DNA è una molecola a doppia elica?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "La fotosintesi avviene solo nelle piante?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Il cuore umano ha quattro camere?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Gli squali sono mammiferi?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "La luce viaggia più veloce del suono?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Il pianeta Terra è l'unico con vita?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "L'acqua è composta da idrogeno e ossigeno?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "I dinosauri si estinsero 65 milioni di anni fa?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Il cervello umano usa il 10% delle sue capacità?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Harry Potter è una serie di libri scritta da J.K. Rowling?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Il film 'Titanic' vinse 11 Oscar?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Michael Jackson è chiamato il Re del Pop?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Il personaggio principale di 'Friends' è Ross?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "La serie 'Game of Thrones' è basata sui libri di George R.R. Martin?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Beyoncé è una rapper?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Il film 'Avengers: Endgame' è il più alto incasso di sempre?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Taylor Swift ha vinto più Grammy di qualsiasi altro artista?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Il personaggio di Iron Man è interpretato da Robert Downey Jr.?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "La canzone 'Bohemian Rhapsody' è dei Queen?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "La Seconda Guerra Mondiale iniziò nel 1939?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Cristoforo Colombo era italiano?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "La Rivoluzione Francese avvenne nel 1789?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Il Muro di Berlino cadde nel 1989?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Alessandro Magno conquistò l'Egitto?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "La Guerra Fredda fu tra Stati Uniti e Unione Sovietica?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Leonardo da Vinci dipinse la Gioconda?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "La Prima Guerra Mondiale finì nel 1918?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Gandhi guidò il movimento di indipendenza in India?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Napoleone nacque in Francia?",
+    "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "La Prima Guerra Mondiale iniziò nel 1912?",
+    "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "Il Titanic affondò nel 1912?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Cleopatra era greca?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Lo sbarco sulla Luna avvenne nel 1972?",
+    "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "La Magna Carta fu firmata nel 1215?",
+    "answer": true,
+    "category": "storia"
+  }
+]

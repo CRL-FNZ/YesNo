@@ -1,0 +1,202 @@
+[
+  {
+    "text": "Die Hauptstadt von Deutschland ist Berlin?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Die Sonne dreht sich um die Erde?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Wasser kocht bei 100°C?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Das Mittelmeer ist der größte Ozean?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Christoph Kolumbus entdeckte Amerika 1492?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Die Chinesische Mauer ist vom Mond aus sichtbar?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Der menschliche Körper hat 206 Knochen?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Der Planet am nächsten zur Sonne ist Venus?",
+    "answer": false,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Die Amtssprache Brasiliens ist Portugiesisch?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Das chemische Symbol für Gold ist Au?",
+    "answer": true,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Menschen haben 23 Chromosomenpaare?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "DNA ist ein Doppelhelix-Molekül?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Photosynthese findet nur in Pflanzen statt?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Das menschliche Herz hat vier Kammern?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Haie sind Säugetiere?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Licht reist schneller als Schall?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Die Erde ist der einzige Planet mit Leben?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Wasser besteht aus Wasserstoff und Sauerstoff?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Dinosaurier starben vor 65 Millionen Jahren aus?",
+    "answer": true,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Das menschliche Gehirn nutzt nur 10% seiner Kapazität?",
+    "answer": false,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Harry Potter ist eine Buchserie von J.K. Rowling?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Der Film 'Titanic' gewann 11 Oscars?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Michael Jackson wird der King of Pop genannt?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Die Hauptfigur von 'Friends' ist Ross?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Die Serie 'Game of Thrones' basiert auf Büchern von George R.R. Martin?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Beyoncé ist eine Rapperin?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Der Film 'Avengers: Endgame' ist der höchste Einspieler aller Zeiten?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Taylor Swift hat mehr Grammys gewonnen als jeder andere Künstler?",
+    "answer": false,
+    "category": "popCulture"
+  },
+  {
+    "text": "Der Charakter Iron Man wird von Robert Downey Jr. gespielt?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Das Lied 'Bohemian Rhapsody' ist von Queen?",
+    "answer": true,
+    "category": "popCulture"
+  },
+  {
+    "text": "Der Zweite Weltkrieg begann 1939?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Christoph Kolumbus war Italiener?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Die Französische Revolution fand 1789 statt?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Die Berliner Mauer fiel 1989?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Alexander der Große eroberte Ägypten?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Napoleon wurde in Frankreich geboren?",
+    "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "Der Erste Weltkrieg begann 1912?",
+    "answer": false,
+    "category": "storia"
+  },
+  {
+    "text": "Die Titanic sank 1912?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Kleopatra war Griechin?",
+    "answer": true,
+    "category": "storia"
+  },
+  {
+    "text": "Die Mondlandung fand 1972 statt?",
+    "answer": false,
+    "category": "storia"
+  }
+]
