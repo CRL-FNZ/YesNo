@@ -131,6 +131,48 @@ extension Language {
         case .german: return "Neues Spiel"
         }
     }
+
+    var thinkTitle: String {
+        switch self {
+        case .italian: return "Think"
+        case .german: return "Think"
+        }
+    }
+
+    var thinkSubtitle: String {
+        switch self {
+        case .italian: return "Rifletti e discuti"
+        case .german: return "Nachdenken und diskutieren"
+        }
+    }
+
+    var nextQuestionText: String {
+        switch self {
+        case .italian: return "Prossima domanda"
+        case .german: return "Nächste Frage"
+        }
+    }
+
+    var burkardTitle: String {
+        switch self {
+        case .italian: return "Burkard"
+        case .german: return "Burkard"
+        }
+    }
+
+    var burkardSubtitle: String {
+        switch self {
+        case .italian: return "Condividi e confrontati"
+        case .german: return "Teilen und austauschen"
+        }
+    }
+
+    var backText: String {
+        switch self {
+        case .italian: return "Indietro"
+        case .german: return "Zurück"
+        }
+    }
 }
 
 struct QuestionJSON: Codable {

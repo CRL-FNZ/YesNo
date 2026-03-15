@@ -2,7 +2,7 @@ import SwiftUI
 import Combine
 
 enum ViewType {
-    case language, home, setup, game, result
+    case language, home, setup, game, result, think, burkard
 }
 
 @main
@@ -15,7 +15,7 @@ struct YesNoApp: App {
     var body: some Scene {
         WindowGroup {
             ZStack {
-                if let language = selectedLanguage {
+                if selectedLanguage != nil {
                     switch currentView {
                     case .language:
                         LanguageSelectionView(selectedLanguage: $selectedLanguage, currentView: $currentView)
@@ -27,6 +27,10 @@ struct YesNoApp: App {
                         GameView(gameState: gameState, motionManager: motionManager, currentView: $currentView)
                     case .result:
                         ResultView(gameState: gameState, currentView: $currentView)
+                    case .think:
+                        ThinkView(language: gameState.language, currentView: $currentView)
+                    case .burkard:
+                        BurkardView(language: gameState.language, currentView: $currentView)
                     }
                 } else {
                     LanguageSelectionView(selectedLanguage: $selectedLanguage, currentView: $currentView)

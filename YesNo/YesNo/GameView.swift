@@ -15,6 +15,7 @@ struct GameView: View {
     @State private var confirmProgress: CGFloat = 0.0
     @State private var currentAnimColor: Color? = nil
     @State private var lastUpdateTime: Date? = nil
+    @State private var arrowLocked = true
     private let baseDuration: TimeInterval = 3.0
 
     private var currentQuestion: Question? {
@@ -65,7 +66,6 @@ struct GameView: View {
             }
         }
         .onChange(of: gameState.isGameOver) { _, newValue in if newValue { currentView = .result } }
-        .onChange(of: gameState.currentQuestionIndex) { _, _ in startCountdown() }
         .onAppear {
             gameState.startTimer()
             startCountdown()
@@ -132,8 +132,8 @@ struct GameView: View {
                 Image(systemName: "arrow.up")
                     .resizable()
                     .frame(width: 50, height: 50)
-                    .rotationEffect(Angle(radians: -motionManager.rotation))
-                    .animation(.linear(duration: 0.1), value: motionManager.rotation)
+                    .rotationEffect(Angle(radians: arrowLocked ? 0 : -motionManager.rotation))
+                    .animation(.easeOut(duration: 0.15), value: motionManager.rotation)
             }.frame(height: 300)
 
             Spacer()
@@ -164,6 +164,7 @@ struct GameView: View {
             feedbackTimer = Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
                 showFeedback = false
                 motionManager.resetStability()
+                startCountdown()
             }
         }
         .onDisappear { feedbackTimer?.invalidate() }
@@ -174,6 +175,7 @@ struct GameView: View {
         let y = yes ?? (color == .green)
         isCorrect = y == question.answer
         gameState.submitAnswer(isYes: y)
+        motionManager.paused = true
         showFeedback = true
         resetAnim()
         stopCountdown()
@@ -181,8 +183,15 @@ struct GameView: View {
 
     private func startCountdown() {
         stopCountdown()
+        resetAnim()
+        motionManager.resetReference()
+        arrowLocked = true
         ready = false
         countdown = 5
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            motionManager.paused = false
+            arrowLocked = false
+        }
         readyTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { t in
             if countdown > 1 { countdown -= 1 } else { ready = true; t.invalidate() }
         }

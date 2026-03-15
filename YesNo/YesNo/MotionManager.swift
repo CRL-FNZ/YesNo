@@ -8,8 +8,10 @@ class MotionManager: ObservableObject {
     @Published var isStable: Bool = false
     private var stabilityTimer: Timer?
     private var lastRotation: Double = 0.0
-    private let stabilityThreshold: Double = 0.1 // Radians
-    private let stabilityDuration: TimeInterval = 2.0 // Seconds
+    private let stabilityThreshold: Double = 0.1
+    private let stabilityDuration: TimeInterval = 2.0
+    private var referenceYaw: Double? = nil
+    var paused: Bool = false
 
     init() {
         startMotionUpdates()
@@ -21,14 +23,26 @@ class MotionManager: ObservableObject {
 
     private func startMotionUpdates() {
         if motionManager.isDeviceMotionAvailable {
-            motionManager.deviceMotionUpdateInterval = 1.0 / 60.0 // 60 Hz
+            motionManager.deviceMotionUpdateInterval = 1.0 / 60.0
             motionManager.startDeviceMotionUpdates(to: .main) { [weak self] (motion, error) in
                 guard let self = self, let motion = motion else { return }
-                // Use yaw for left/right rotation with screen parallel to the table
-                self.rotation = motion.attitude.yaw
+                guard !self.paused else { return }
+                let rawYaw = motion.attitude.yaw
+                if self.referenceYaw == nil {
+                    self.referenceYaw = rawYaw
+                }
+                var delta = rawYaw - (self.referenceYaw ?? 0)
+                if delta > .pi { delta -= 2 * .pi }
+                if delta < -.pi { delta += 2 * .pi }
+                self.rotation = delta
                 self.checkStability()
             }
         }
+    }
+
+    func resetReference() {
+        referenceYaw = nil
+        rotation = 0
     }
 
     private func stopMotionUpdates() {
