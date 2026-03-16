@@ -1,0 +1,332 @@
+[
+  {
+    "text": "Was ist die Hauptstadt von Australien?",
+    "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+    "correctIndex": 2,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Wie viele Planeten hat das Sonnensystem?",
+    "options": ["7", "8", "9", "10"],
+    "correctIndex": 1,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Welcher ist der längste Fluss der Welt?",
+    "options": ["Mississippi", "Amazonas", "Nil", "Jangtse"],
+    "correctIndex": 2,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Auf welchem Kontinent liegt Ägypten?",
+    "options": ["Asien", "Europa", "Afrika", "Ozeanien"],
+    "correctIndex": 2,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Welches Land hat die größte Bevölkerung der Welt?",
+    "options": ["USA", "China", "Indien", "Indonesien"],
+    "correctIndex": 2,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Welche ist die meistgesprochene Muttersprache der Welt?",
+    "options": ["Englisch", "Spanisch", "Mandarin", "Hindi"],
+    "correctIndex": 2,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Welcher Ozean ist der größte?",
+    "options": ["Atlantik", "Indischer Ozean", "Arktis", "Pazifik"],
+    "correctIndex": 3,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Wie viele Sterne hat die Flagge der Europäischen Union?",
+    "options": ["10", "12", "15", "27"],
+    "correctIndex": 1,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Welches ist das kleinste Land der Welt?",
+    "options": ["Monaco", "San Marino", "Vatikanstadt", "Liechtenstein"],
+    "correctIndex": 2,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Welches Metall hat das chemische Symbol Fe?",
+    "options": ["Kupfer", "Eisen", "Silber", "Aluminium"],
+    "correctIndex": 1,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Was ist das größte Organ des menschlichen Körpers?",
+    "options": ["Leber", "Gehirn", "Haut", "Darm"],
+    "correctIndex": 2,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Welches Gas ist am häufigsten in der Erdatmosphäre?",
+    "options": ["Sauerstoff", "Stickstoff", "Kohlendioxid", "Argon"],
+    "correctIndex": 1,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Wie viele Beine hat eine Spinne?",
+    "options": ["6", "8", "10", "12"],
+    "correctIndex": 1,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Welcher ist der heißeste Planet im Sonnensystem?",
+    "options": ["Merkur", "Venus", "Mars", "Jupiter"],
+    "correctIndex": 1,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Welches Tier ist das schnellste an Land?",
+    "options": ["Löwe", "Gepard", "Antilope", "Pferd"],
+    "correctIndex": 1,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Wie viele Liter Blut hat ein Erwachsener durchschnittlich?",
+    "options": ["3 Liter", "5 Liter", "7 Liter", "10 Liter"],
+    "correctIndex": 1,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Welcher ist der längste Knochen im menschlichen Körper?",
+    "options": ["Oberarmknochen", "Schienbein", "Oberschenkelknochen", "Speiche"],
+    "correctIndex": 2,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Welches Vitamin produziert der Körper durch Sonneneinstrahlung?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "correctIndex": 3,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Welches ist das größte Säugetier der Welt?",
+    "options": ["Afrikanischer Elefant", "Blauwal", "Walhai", "Giraffe"],
+    "correctIndex": 1,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Wie viele Zähne hat ein Erwachsener?",
+    "options": ["28", "30", "32", "34"],
+    "correctIndex": 2,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Wer hat den Film 'Pulp Fiction' gedreht?",
+    "options": ["Martin Scorsese", "Quentin Tarantino", "Steven Spielberg", "Christopher Nolan"],
+    "correctIndex": 1,
+    "category": "popCulture"
+  },
+  {
+    "text": "Welche Band sang 'Stairway to Heaven'?",
+    "options": ["Pink Floyd", "The Beatles", "Led Zeppelin", "The Rolling Stones"],
+    "correctIndex": 2,
+    "category": "popCulture"
+  },
+  {
+    "text": "In welchem Jahr kam das erste iPhone heraus?",
+    "options": ["2005", "2006", "2007", "2008"],
+    "correctIndex": 2,
+    "category": "popCulture"
+  },
+  {
+    "text": "Wer spielt Jack Sparrow in 'Fluch der Karibik'?",
+    "options": ["Brad Pitt", "Johnny Depp", "Orlando Bloom", "Leonardo DiCaprio"],
+    "correctIndex": 1,
+    "category": "popCulture"
+  },
+  {
+    "text": "Welche Serie spielt in Westeros?",
+    "options": ["The Witcher", "Der Herr der Ringe", "Game of Thrones", "Vikings"],
+    "correctIndex": 2,
+    "category": "popCulture"
+  },
+  {
+    "text": "Wer sang 'Imagine'?",
+    "options": ["Paul McCartney", "John Lennon", "Mick Jagger", "David Bowie"],
+    "correctIndex": 1,
+    "category": "popCulture"
+  },
+  {
+    "text": "Welche Disney-Figur lebt in einem Eispalast?",
+    "options": ["Rapunzel", "Cinderella", "Elsa", "Mulan"],
+    "correctIndex": 2,
+    "category": "popCulture"
+  },
+  {
+    "text": "Wer ist der Gründer von Facebook?",
+    "options": ["Bill Gates", "Steve Jobs", "Mark Zuckerberg", "Elon Musk"],
+    "correctIndex": 2,
+    "category": "popCulture"
+  },
+  {
+    "text": "In welcher Stadt spielt die Serie 'Friends'?",
+    "options": ["Los Angeles", "Chicago", "New York", "Boston"],
+    "correctIndex": 2,
+    "category": "popCulture"
+  },
+  {
+    "text": "Welcher Superheld ist auch als Bruce Wayne bekannt?",
+    "options": ["Superman", "Spider-Man", "Iron Man", "Batman"],
+    "correctIndex": 3,
+    "category": "popCulture"
+  },
+  {
+    "text": "In welchem Jahr begann der Erste Weltkrieg?",
+    "options": ["1912", "1914", "1916", "1918"],
+    "correctIndex": 1,
+    "category": "storia"
+  },
+  {
+    "text": "Wer war der erste Präsident der Vereinigten Staaten?",
+    "options": ["Thomas Jefferson", "Benjamin Franklin", "George Washington", "John Adams"],
+    "correctIndex": 2,
+    "category": "storia"
+  },
+  {
+    "text": "In welchem Jahr fiel das Weströmische Reich?",
+    "options": ["395 n. Chr.", "410 n. Chr.", "455 n. Chr.", "476 n. Chr."],
+    "correctIndex": 3,
+    "category": "storia"
+  },
+  {
+    "text": "Wer malte die Sixtinische Kapelle?",
+    "options": ["Leonardo da Vinci", "Raffael", "Michelangelo", "Caravaggio"],
+    "correctIndex": 2,
+    "category": "storia"
+  },
+  {
+    "text": "Wo landeten die Alliierten 1944 in Frankreich?",
+    "options": ["Marseille", "Normandie", "Bretagne", "Calais"],
+    "correctIndex": 1,
+    "category": "storia"
+  },
+  {
+    "text": "Wer schrieb 'Der Fürst'?",
+    "options": ["Dante Alighieri", "Niccolò Machiavelli", "Giovanni Boccaccio", "Francesco Petrarca"],
+    "correctIndex": 1,
+    "category": "storia"
+  },
+  {
+    "text": "Welche Zivilisation baute Machu Picchu?",
+    "options": ["Azteken", "Maya", "Inka", "Olmeken"],
+    "correctIndex": 2,
+    "category": "storia"
+  },
+  {
+    "text": "In welchem Jahr betrat der Mensch den Mond?",
+    "options": ["1967", "1968", "1969", "1970"],
+    "correctIndex": 2,
+    "category": "storia"
+  },
+  {
+    "text": "Wer war der letzte König von Italien?",
+    "options": ["Viktor Emanuel II.", "Umberto I.", "Viktor Emanuel III.", "Umberto II."],
+    "correctIndex": 3,
+    "category": "storia"
+  },
+  {
+    "text": "Welches Ereignis löste den Ersten Weltkrieg aus?",
+    "options": ["Invasion Polens", "Attentat von Sarajevo", "Versenkung der Lusitania", "Vertrag von Versailles"],
+    "correctIndex": 1,
+    "category": "storia"
+  },
+  {
+    "text": "Wer entwarf den Palast von Caserta?",
+    "options": ["Gian Lorenzo Bernini", "Luigi Vanvitelli", "Andrea Palladio", "Filippo Brunelleschi"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "In welchem Jahr zog Karl von Bourbon in Neapel ein?",
+    "options": ["1720", "1734", "1748", "1760"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Wer leitete den Monitore Napoletano während der Revolution von 1799?",
+    "options": ["Vincenzo Cuoco", "Eleonora de Fonseca Pimentel", "Mario Pagano", "Domenico Cirillo"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Wo wurde Joachim Murat 1815 erschossen?",
+    "options": ["Neapel", "Cosenza", "Pizzo Calabro", "Reggio Calabria"],
+    "correctIndex": 2,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Welche Manufaktur war die Spezialität von San Leucio?",
+    "options": ["Wolle", "Baumwolle", "Seide", "Leinen"],
+    "correctIndex": 2,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Welches Gesetz von 1806 schaffte die Feudalherrschaft im Königreich Neapel ab?",
+    "options": ["Gesetz vom 2. August", "Gesetz vom 15. März", "Gesetz vom 1. Januar", "Gesetz vom 30. Juni"],
+    "correctIndex": 0,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Welche war die erste italienische Eisenbahn?",
+    "options": ["Rom-Frascati", "Neapel-Portici", "Mailand-Monza", "Turin-Genua"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Welches bourbonische Stahlwerk ging der Ansaldo voraus?",
+    "options": ["Mongiana", "Pietrarsa", "Torre Annunziata", "Castellammare"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Wer bezeichnete die Revolution von 1799 als 'passive Revolution'?",
+    "options": ["Benedetto Croce", "Vincenzo Cuoco", "Antonio Gramsci", "Gaetano Filangieri"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Welches Erdbeben von 1783 verwüstete Süditalien?",
+    "options": ["Erdbeben von Irpinia", "Erdbeben von Kalabrien", "Erdbeben von Messina", "Erdbeben von Vulture"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "In welchem Jahr entstand das Königreich beider Sizilien?",
+    "options": ["1806", "1810", "1816", "1820"],
+    "correctIndex": 2,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Wer gründete eine Baumwollfabrik in Piedimonte d'Alife?",
+    "options": ["Luigi Vanvitelli", "Johann Jakob Egg", "Ferdinand II.", "Giuseppe Zurlo"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Wo brach die sizilianische Revolution von 1848 aus?",
+    "options": ["Catania", "Messina", "Palermo", "Syrakus"],
+    "correctIndex": 2,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Wer schrieb die 'Zivilgeschichte des Königreichs Neapel'?",
+    "options": ["Giambattista Vico", "Pietro Giannone", "Antonio Genovesi", "Gaetano Filangieri"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Welches Dampfschiff war 1818 das erste italienische?",
+    "options": ["Sicilia", "Ferdinando I", "Real Ferdinando", "Vesuvio"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  }
+]

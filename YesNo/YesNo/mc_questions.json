@@ -1,0 +1,332 @@
+[
+  {
+    "text": "Qual è la capitale dell'Australia?",
+    "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+    "correctIndex": 2,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Quanti pianeti ha il sistema solare?",
+    "options": ["7", "8", "9", "10"],
+    "correctIndex": 1,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Qual è il fiume più lungo del mondo?",
+    "options": ["Mississipi", "Rio delle Amazzoni", "Nilo", "Yangtze"],
+    "correctIndex": 2,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "In quale continente si trova l'Egitto?",
+    "options": ["Asia", "Europa", "Africa", "Oceania"],
+    "correctIndex": 2,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Quale paese ha la popolazione più numerosa al mondo?",
+    "options": ["USA", "Cina", "India", "Indonesia"],
+    "correctIndex": 2,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Qual è la lingua più parlata al mondo come lingua madre?",
+    "options": ["Inglese", "Spagnolo", "Cinese mandarino", "Hindi"],
+    "correctIndex": 2,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Quale oceano è il più grande?",
+    "options": ["Atlantico", "Indiano", "Artico", "Pacifico"],
+    "correctIndex": 3,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Quante stelle ci sono sulla bandiera dell'Unione Europea?",
+    "options": ["10", "12", "15", "27"],
+    "correctIndex": 1,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Qual è il paese più piccolo del mondo?",
+    "options": ["Monaco", "San Marino", "Vaticano", "Liechtenstein"],
+    "correctIndex": 2,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Quale metallo ha il simbolo chimico Fe?",
+    "options": ["Rame", "Ferro", "Argento", "Alluminio"],
+    "correctIndex": 1,
+    "category": "culturaGenerale"
+  },
+  {
+    "text": "Qual è l'organo più grande del corpo umano?",
+    "options": ["Fegato", "Cervello", "Pelle", "Intestino"],
+    "correctIndex": 2,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Quale gas è più abbondante nell'atmosfera terrestre?",
+    "options": ["Ossigeno", "Azoto", "Anidride carbonica", "Argon"],
+    "correctIndex": 1,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Quante zampe ha un ragno?",
+    "options": ["6", "8", "10", "12"],
+    "correctIndex": 1,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Qual è il pianeta più caldo del sistema solare?",
+    "options": ["Mercurio", "Venere", "Marte", "Giove"],
+    "correctIndex": 1,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Quale animale è il più veloce sulla terra?",
+    "options": ["Leone", "Ghepardo", "Antilope", "Cavallo"],
+    "correctIndex": 1,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Quanti litri di sangue ha in media un adulto?",
+    "options": ["3 litri", "5 litri", "7 litri", "10 litri"],
+    "correctIndex": 1,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Qual è l'osso più lungo del corpo umano?",
+    "options": ["Omero", "Tibia", "Femore", "Radio"],
+    "correctIndex": 2,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Quale vitamina produce il corpo con l'esposizione al sole?",
+    "options": ["Vitamina A", "Vitamina B", "Vitamina C", "Vitamina D"],
+    "correctIndex": 3,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Qual è il mammifero più grande del mondo?",
+    "options": ["Elefante africano", "Balenottera azzurra", "Squalo balena", "Giraffa"],
+    "correctIndex": 1,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Quanti denti ha un adulto?",
+    "options": ["28", "30", "32", "34"],
+    "correctIndex": 2,
+    "category": "scienzaNatura"
+  },
+  {
+    "text": "Chi ha diretto il film 'Pulp Fiction'?",
+    "options": ["Martin Scorsese", "Quentin Tarantino", "Steven Spielberg", "Christopher Nolan"],
+    "correctIndex": 1,
+    "category": "popCulture"
+  },
+  {
+    "text": "Quale band ha cantato 'Stairway to Heaven'?",
+    "options": ["Pink Floyd", "The Beatles", "Led Zeppelin", "The Rolling Stones"],
+    "correctIndex": 2,
+    "category": "popCulture"
+  },
+  {
+    "text": "In quale anno è uscito il primo iPhone?",
+    "options": ["2005", "2006", "2007", "2008"],
+    "correctIndex": 2,
+    "category": "popCulture"
+  },
+  {
+    "text": "Chi interpreta Jack Sparrow in 'Pirati dei Caraibi'?",
+    "options": ["Brad Pitt", "Johnny Depp", "Orlando Bloom", "Leonardo DiCaprio"],
+    "correctIndex": 1,
+    "category": "popCulture"
+  },
+  {
+    "text": "Quale serie TV si svolge a Westeros?",
+    "options": ["The Witcher", "Il Signore degli Anelli", "Game of Thrones", "Vikings"],
+    "correctIndex": 2,
+    "category": "popCulture"
+  },
+  {
+    "text": "Chi ha cantato 'Imagine'?",
+    "options": ["Paul McCartney", "John Lennon", "Mick Jagger", "David Bowie"],
+    "correctIndex": 1,
+    "category": "popCulture"
+  },
+  {
+    "text": "Quale personaggio Disney vive in un castello di ghiaccio?",
+    "options": ["Rapunzel", "Cenerentola", "Elsa", "Mulan"],
+    "correctIndex": 2,
+    "category": "popCulture"
+  },
+  {
+    "text": "Chi è il creatore di Facebook?",
+    "options": ["Bill Gates", "Steve Jobs", "Mark Zuckerberg", "Elon Musk"],
+    "correctIndex": 2,
+    "category": "popCulture"
+  },
+  {
+    "text": "In quale città è ambientata la serie 'Friends'?",
+    "options": ["Los Angeles", "Chicago", "New York", "Boston"],
+    "correctIndex": 2,
+    "category": "popCulture"
+  },
+  {
+    "text": "Quale supereroe è anche conosciuto come Bruce Wayne?",
+    "options": ["Superman", "Spider-Man", "Iron Man", "Batman"],
+    "correctIndex": 3,
+    "category": "popCulture"
+  },
+  {
+    "text": "In quale anno iniziò la Prima Guerra Mondiale?",
+    "options": ["1912", "1914", "1916", "1918"],
+    "correctIndex": 1,
+    "category": "storia"
+  },
+  {
+    "text": "Chi fu il primo presidente degli Stati Uniti?",
+    "options": ["Thomas Jefferson", "Benjamin Franklin", "George Washington", "John Adams"],
+    "correctIndex": 2,
+    "category": "storia"
+  },
+  {
+    "text": "In quale anno cadde l'Impero Romano d'Occidente?",
+    "options": ["395 d.C.", "410 d.C.", "455 d.C.", "476 d.C."],
+    "correctIndex": 3,
+    "category": "storia"
+  },
+  {
+    "text": "Chi dipinse la Cappella Sistina?",
+    "options": ["Leonardo da Vinci", "Raffaello", "Michelangelo", "Caravaggio"],
+    "correctIndex": 2,
+    "category": "storia"
+  },
+  {
+    "text": "Dove sbarcarono gli Alleati nel 1944 in Francia?",
+    "options": ["Marsiglia", "Normandia", "Bretagna", "Calais"],
+    "correctIndex": 1,
+    "category": "storia"
+  },
+  {
+    "text": "Chi scrisse 'Il Principe'?",
+    "options": ["Dante Alighieri", "Niccolò Machiavelli", "Giovanni Boccaccio", "Francesco Petrarca"],
+    "correctIndex": 1,
+    "category": "storia"
+  },
+  {
+    "text": "Quale civiltà costruì Machu Picchu?",
+    "options": ["Azteca", "Maya", "Inca", "Olmeca"],
+    "correctIndex": 2,
+    "category": "storia"
+  },
+  {
+    "text": "In quale anno l'uomo mise piede sulla Luna?",
+    "options": ["1967", "1968", "1969", "1970"],
+    "correctIndex": 2,
+    "category": "storia"
+  },
+  {
+    "text": "Chi fu l'ultimo re d'Italia?",
+    "options": ["Vittorio Emanuele II", "Umberto I", "Vittorio Emanuele III", "Umberto II"],
+    "correctIndex": 3,
+    "category": "storia"
+  },
+  {
+    "text": "Quale evento scatenò la Prima Guerra Mondiale?",
+    "options": ["Invasione della Polonia", "Attentato di Sarajevo", "Affondamento del Lusitania", "Trattato di Versailles"],
+    "correctIndex": 1,
+    "category": "storia"
+  },
+  {
+    "text": "Chi progettò la Reggia di Caserta?",
+    "options": ["Gian Lorenzo Bernini", "Luigi Vanvitelli", "Andrea Palladio", "Filippo Brunelleschi"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "In quale anno Carlo di Borbone entrò a Napoli?",
+    "options": ["1720", "1734", "1748", "1760"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Chi dirigeva il Monitore Napoletano durante la rivoluzione del 1799?",
+    "options": ["Vincenzo Cuoco", "Eleonora de Fonseca Pimentel", "Mario Pagano", "Domenico Cirillo"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Dove fu fucilato Gioacchino Murat nel 1815?",
+    "options": ["Napoli", "Cosenza", "Pizzo Calabro", "Reggio Calabria"],
+    "correctIndex": 2,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Quale manifattura era specialità di San Leucio?",
+    "options": ["Lana", "Cotone", "Seta", "Lino"],
+    "correctIndex": 2,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Quale legge del 1806 abolì la feudalità nel Regno di Napoli?",
+    "options": ["Legge del 2 agosto", "Legge del 15 marzo", "Legge del 1 gennaio", "Legge del 30 giugno"],
+    "correctIndex": 0,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Quale fu la prima ferrovia italiana?",
+    "options": ["Roma-Frascati", "Napoli-Portici", "Milano-Monza", "Torino-Genova"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Quale stabilimento siderurgico borbonico precedette l'Ansaldo?",
+    "options": ["Mongiana", "Pietrarsa", "Torre Annunziata", "Castellammare"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Chi definì la rivoluzione del 1799 una 'rivoluzione passiva'?",
+    "options": ["Benedetto Croce", "Vincenzo Cuoco", "Antonio Gramsci", "Gaetano Filangieri"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Quale terremoto del 1783 devastò il Mezzogiorno?",
+    "options": ["Terremoto dell'Irpinia", "Terremoto di Calabria", "Terremoto di Messina", "Terremoto del Vulture"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "In quale anno nacque il Regno delle Due Sicilie?",
+    "options": ["1806", "1810", "1816", "1820"],
+    "correctIndex": 2,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Chi fondò un cotonificio a Piedimonte d'Alife?",
+    "options": ["Luigi Vanvitelli", "Johann Jakob Egg", "Ferdinando II", "Giuseppe Zurlo"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Dove scoppiò la rivoluzione siciliana del 1848?",
+    "options": ["Catania", "Messina", "Palermo", "Siracusa"],
+    "correctIndex": 2,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Chi scrisse la 'Istoria Civile del Regno di Napoli'?",
+    "options": ["Giambattista Vico", "Pietro Giannone", "Antonio Genovesi", "Gaetano Filangieri"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Quale nave a vapore fu la prima italiana nel 1818?",
+    "options": ["Sicilia", "Ferdinando I", "Real Ferdinando", "Vesuvio"],
+    "correctIndex": 1,
+    "category": "italiaMeridionale"
+  }
+]

@@ -71,6 +71,21 @@ struct HomeView: View {
                                 showCodeAlert = true
                             }
                     )
+
+                    Button(action: {
+                        currentView = .multipleChoice
+                    }) {
+                        HStack {
+                            Image(systemName: "list.bullet.rectangle.fill")
+                            Text("Multiple Choice")
+                        }
+                        .font(.title)
+                        .padding()
+                        .frame(maxWidth: 220)
+                        .background(Color.teal.opacity(0.8))
+                        .foregroundColor(.white)
+                        .cornerRadius(14)
+                    }
                 }
                 .offset(y: buttonsOffset)
                 .opacity(buttonsOpacity)

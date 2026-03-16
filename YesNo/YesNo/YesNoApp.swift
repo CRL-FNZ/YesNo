@@ -2,7 +2,7 @@ import SwiftUI
 import Combine
 
 enum ViewType {
-    case language, home, setup, game, result, think, burkard
+    case language, home, setup, game, result, think, burkard, multipleChoice
 }
 
 @main
@@ -38,6 +38,9 @@ struct YesNoApp: App {
                             .transition(.move(edge: .trailing))
                     case .burkard:
                         BurkardView(language: gameState.language, currentView: $currentView)
+                            .transition(.move(edge: .trailing))
+                    case .multipleChoice:
+                        MultipleChoiceView(language: gameState.language, currentView: $currentView)
                             .transition(.move(edge: .trailing))
                     }
                 } else {
