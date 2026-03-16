@@ -2,7 +2,7 @@ import SwiftUI
 import Combine
 
 enum ViewType {
-    case language, home, setup, game, result, think, burkard, multipleChoice
+    case language, home, setup, game, result, think, burkard, mcSetup, multipleChoice, mcResult
 }
 
 @main
@@ -10,7 +10,8 @@ struct YesNoApp: App {
     @State var currentView: ViewType = .language
     @State var selectedLanguage: Language? = nil
     @StateObject var motionManager = MotionManager()
-    @StateObject var gameState = GameState(language: .italian) // Default, will be updated
+    @StateObject var gameState = GameState(language: .italian)
+    @StateObject var mcGameState = MCGameState()
     @StateObject var themeManager = ThemeManager()
 
     var body: some Scene {
@@ -39,9 +40,15 @@ struct YesNoApp: App {
                     case .burkard:
                         BurkardView(language: gameState.language, currentView: $currentView)
                             .transition(.move(edge: .trailing))
-                    case .multipleChoice:
-                        MultipleChoiceView(language: gameState.language, currentView: $currentView)
+                    case .mcSetup:
+                        MCSetupView(currentView: $currentView, mcGameState: mcGameState, language: gameState.language)
                             .transition(.move(edge: .trailing))
+                    case .multipleChoice:
+                        MultipleChoiceView(mcGameState: mcGameState, themeManager: themeManager, currentView: $currentView)
+                            .transition(.opacity)
+                    case .mcResult:
+                        MCResultView(mcGameState: mcGameState, themeManager: themeManager, currentView: $currentView)
+                            .transition(.scale.combined(with: .opacity))
                     }
                 } else {
                     LanguageSelectionView(selectedLanguage: $selectedLanguage, currentView: $currentView)

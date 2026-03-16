@@ -73,7 +73,7 @@ struct HomeView: View {
                     )
 
                     Button(action: {
-                        currentView = .multipleChoice
+                        currentView = .mcSetup
                     }) {
                         HStack {
                             Image(systemName: "list.bullet.rectangle.fill")

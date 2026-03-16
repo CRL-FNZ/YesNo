@@ -354,3 +354,121 @@ class GameState: ObservableObject {
         gameTimer = nil
     }
 }
+
+// MARK: - Multiple Choice Game State
+
+class MCGameState: ObservableObject {
+    @Published var questions: [MCQuestion] = []
+    @Published var currentQuestionIndex: Int = 0
+    @Published var scores: [Int] = []
+    @Published var currentTurn: Int = 0
+    @Published var gameMode: GameMode = .firstTo(points: 10)
+    @Published var timeRemaining: Int? = nil
+    @Published var teamTimers: [Int] = []
+    @Published var eliminatedTeams: Set<Int> = []
+    @Published var isGameOver: Bool = false
+    var language: Language = .italian
+
+    private var gameTimer: Timer?
+
+    var currentQuestion: MCQuestion? {
+        guard currentQuestionIndex < questions.count else { return nil }
+        return questions[currentQuestionIndex]
+    }
+
+    func setup(numberOfTeams: Int, gameMode: GameMode, selectedCategories: [Category], language: Language) {
+        stopTimer()
+        self.language = language
+        self.gameMode = gameMode
+        self.scores = Array(repeating: 0, count: numberOfTeams)
+        self.currentQuestionIndex = 0
+        self.currentTurn = 0
+        self.isGameOver = false
+        self.eliminatedTeams = []
+        self.questions = loadQuestions(categories: selectedCategories)
+
+        if case .timedMode(let seconds) = gameMode {
+            self.teamTimers = Array(repeating: seconds, count: numberOfTeams)
+            self.timeRemaining = seconds
+        } else {
+            self.teamTimers = []
+            self.timeRemaining = nil
+        }
+    }
+
+    private func loadQuestions(categories: [Category]) -> [MCQuestion] {
+        let jsonFile = language == .italian ? "mc_questions" : "mc_questions_de"
+        guard let url = Bundle.main.url(forResource: jsonFile, withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let loaded = try? JSONDecoder().decode([MCQuestion].self, from: data) else {
+            return []
+        }
+        let categoryKeys = categories.map { $0.rawValue }
+        return loaded.filter { categoryKeys.contains($0.category) }.shuffled()
+    }
+
+    func submitAnswer(isCorrect: Bool) {
+        if isCorrect {
+            scores[currentTurn] += 1
+        }
+        if case .firstTo(let points) = gameMode, scores[currentTurn] >= points {
+            isGameOver = true
+        } else {
+            nextTurn()
+        }
+    }
+
+    private func nextTurn() {
+        let teamCount = scores.count
+        var next = (currentTurn + 1) % teamCount
+
+        if case .timedMode = gameMode {
+            var checked = 0
+            while eliminatedTeams.contains(next) && checked < teamCount {
+                next = (next + 1) % teamCount
+                checked += 1
+            }
+            if eliminatedTeams.count >= teamCount {
+                isGameOver = true
+                return
+            }
+        }
+
+        currentTurn = next
+        currentQuestionIndex += 1
+        if currentQuestionIndex >= questions.count {
+            questions.shuffle()
+            currentQuestionIndex = 0
+        }
+
+        if case .timedMode = gameMode {
+            timeRemaining = teamTimers[currentTurn]
+        }
+    }
+
+    func startTimer() {
+        stopTimer()
+        guard case .timedMode = gameMode else { return }
+        timeRemaining = teamTimers[currentTurn]
+        gameTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] timer in
+            guard let self = self else { timer.invalidate(); return }
+            if self.teamTimers[self.currentTurn] > 0 {
+                self.teamTimers[self.currentTurn] -= 1
+                self.timeRemaining = self.teamTimers[self.currentTurn]
+            } else {
+                self.eliminatedTeams.insert(self.currentTurn)
+                if self.eliminatedTeams.count >= self.scores.count {
+                    self.isGameOver = true
+                    timer.invalidate()
+                } else {
+                    self.nextTurn()
+                }
+            }
+        }
+    }
+
+    func stopTimer() {
+        gameTimer?.invalidate()
+        gameTimer = nil
+    }
+}

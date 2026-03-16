@@ -8,69 +8,87 @@ struct MCQuestion: Codable {
 }
 
 struct MultipleChoiceView: View {
-    let language: Language
+    @ObservedObject var mcGameState: MCGameState
+    @ObservedObject var themeManager: ThemeManager
     @Binding var currentView: ViewType
-    @State private var questions: [MCQuestion] = []
-    @State private var currentIndex: Int = 0
     @State private var selectedIndex: Int? = nil
     @State private var showResult = false
-    @State private var score: Int = 0
-    @State private var totalAnswered: Int = 0
     @State private var showQuestion = false
 
-    private var isCorrect: Bool {
-        selectedIndex == questions[currentIndex].correctIndex
-    }
+    private var theme: AppTheme { themeManager.currentTheme }
+    private var language: Language { mcGameState.language }
 
     var body: some View {
         ZStack {
-            LinearGradient(
-                colors: [Color.teal.opacity(0.3), Color.blue.opacity(0.2)],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            .edgesIgnoringSafeArea(.all)
+            LinearGradient(colors: theme.backgroundColor, startPoint: .topLeading, endPoint: .bottomTrailing)
+                .edgesIgnoringSafeArea(.all)
 
             VStack(spacing: 0) {
                 // Top bar
                 HStack {
-                    Button(action: { currentView = .home }) {
+                    Button(action: {
+                        mcGameState.stopTimer()
+                        currentView = .home
+                    }) {
                         HStack(spacing: 4) {
                             Image(systemName: "chevron.left")
                             Text(language.backText)
                         }
-                        .foregroundColor(.primary)
+                        .foregroundColor(theme.textColor)
                     }
                     Spacer()
                     Text("Multiple Choice")
                         .font(.headline)
+                        .foregroundColor(theme.textColor)
                     Spacer()
-                    Text("\(score)/\(totalAnswered)")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                        .frame(width: 70)
+                    Color.clear.frame(width: 70)
                 }
                 .padding(.horizontal)
                 .padding(.top, 8)
                 .padding(.bottom, 12)
 
-                if !questions.isEmpty {
+                if let question = mcGameState.currentQuestion {
+                    // Current team indicator
+                    if mcGameState.scores.count > 1 {
+                        HStack {
+                            let avatar = themeManager.teamAvatars[mcGameState.currentTurn % themeManager.teamAvatars.count]
+                            Image(systemName: avatar.rawValue)
+                                .foregroundColor(avatar.color)
+                                .font(.title2)
+                            Text("\(language.turnText) \(mcGameState.currentTurn + 1)")
+                                .font(.headline)
+                                .foregroundColor(theme.textColor)
+                        }
+                        .padding(.bottom, 4)
+                    }
+
+                    // Timer
+                    if case .timedMode = mcGameState.gameMode, let t = mcGameState.timeRemaining {
+                        Text("\(language.timeText) \(t)s")
+                            .font(.title2)
+                            .foregroundColor(t <= 10 ? theme.wrongColor : theme.textColor)
+                            .scaleEffect(t <= 5 ? 1.1 : 1.0)
+                            .animation(.easeInOut(duration: 0.3), value: t)
+                            .padding(.bottom, 4)
+                    }
+
                     Spacer()
 
                     // Category
-                    Text(questions[currentIndex].category.uppercased())
+                    Text(question.category.uppercased())
                         .font(.caption)
                         .tracking(2)
-                        .foregroundColor(.secondary)
+                        .foregroundColor(theme.textColor.opacity(0.6))
                         .padding(.bottom, 8)
 
                     // Question
-                    Text(questions[currentIndex].text)
+                    Text(question.text)
                         .font(.title3)
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.horizontal, 24)
+                        .foregroundColor(theme.textColor)
                         .opacity(showQuestion ? 1 : 0)
                         .offset(y: showQuestion ? 0 : 20)
                         .animation(.easeOut(duration: 0.4), value: showQuestion)
@@ -78,29 +96,29 @@ struct MultipleChoiceView: View {
                     Spacer()
 
                     // Options
-                    VStack(spacing: 12) {
-                        ForEach(0..<questions[currentIndex].options.count, id: \.self) { index in
+                    VStack(spacing: 10) {
+                        ForEach(0..<question.options.count, id: \.self) { index in
                             Button(action: {
                                 guard !showResult else { return }
                                 selectedIndex = index
                                 showResult = true
-                                totalAnswered += 1
-                                if index == questions[currentIndex].correctIndex {
-                                    score += 1
+                                let correct = index == question.correctIndex
+                                if correct {
                                     SoundManager.shared.playCorrect()
                                 } else {
                                     SoundManager.shared.playWrong()
                                 }
+                                mcGameState.submitAnswer(isCorrect: correct)
                             }) {
                                 HStack {
                                     Text(optionLabel(index))
                                         .fontWeight(.bold)
-                                        .frame(width: 30)
-                                    Text(questions[currentIndex].options[index])
+                                        .frame(width: 28)
+                                    Text(question.options[index])
                                         .multilineTextAlignment(.leading)
                                     Spacer()
                                     if showResult {
-                                        if index == questions[currentIndex].correctIndex {
+                                        if index == question.correctIndex {
                                             Image(systemName: "checkmark.circle.fill")
                                                 .foregroundColor(.green)
                                         } else if index == selectedIndex {
@@ -110,23 +128,49 @@ struct MultipleChoiceView: View {
                                     }
                                 }
                                 .font(.body)
-                                .padding()
+                                .padding(.vertical, 12)
+                                .padding(.horizontal)
                                 .frame(maxWidth: .infinity)
-                                .background(optionBackground(index))
-                                .foregroundColor(optionTextColor(index))
+                                .background(optionBackground(index, correctIndex: question.correctIndex))
+                                .foregroundColor(optionTextColor(index, correctIndex: question.correctIndex))
                                 .cornerRadius(12)
                             }
                             .disabled(showResult)
                         }
                     }
-                    .padding(.horizontal, 24)
+                    .padding(.horizontal, 20)
                     .opacity(showQuestion ? 1 : 0)
                     .animation(.easeOut(duration: 0.4).delay(0.1), value: showQuestion)
 
-                    Spacer()
+                    Spacer().frame(height: 12)
 
-                    // Next button (visible after answering)
-                    if showResult {
+                    // Team scores
+                    if mcGameState.scores.count > 1 {
+                        HStack {
+                            ForEach(0..<mcGameState.scores.count, id: \.self) { i in
+                                let avatar = themeManager.teamAvatars[i % themeManager.teamAvatars.count]
+                                VStack(spacing: 2) {
+                                    Image(systemName: avatar.rawValue)
+                                        .foregroundColor(avatar.color)
+                                        .font(.caption)
+                                    Text("\(mcGameState.scores[i])")
+                                        .font(.subheadline)
+                                        .fontWeight(.bold)
+                                }
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 4)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .fill(i == mcGameState.currentTurn ? theme.primaryColor.opacity(0.3) : Color.clear)
+                                )
+                                .foregroundColor(theme.textColor)
+                            }
+                        }
+                        .padding(.bottom, 4)
+                    }
+
+                    // Next button
+                    if showResult && !mcGameState.isGameOver {
                         Button(action: nextQuestion) {
                             HStack {
                                 Text(language.nextQuestionText)
@@ -143,13 +187,18 @@ struct MultipleChoiceView: View {
                         .transition(.move(edge: .bottom).combined(with: .opacity))
                     }
 
-                    Spacer().frame(height: 20)
+                    Spacer().frame(height: 16)
                 }
             }
         }
         .onAppear {
-            loadQuestions()
+            mcGameState.startTimer()
             showQuestion = true
+        }
+        .onChange(of: mcGameState.isGameOver) { _, newValue in
+            if newValue {
+                currentView = .mcResult
+            }
         }
     }
 
@@ -157,11 +206,11 @@ struct MultipleChoiceView: View {
         ["A", "B", "C", "D"][index]
     }
 
-    private func optionBackground(_ index: Int) -> Color {
+    private func optionBackground(_ index: Int, correctIndex: Int) -> Color {
         guard showResult else {
             return Color(.systemBackground).opacity(0.8)
         }
-        if index == questions[currentIndex].correctIndex {
+        if index == correctIndex {
             return Color.green.opacity(0.3)
         }
         if index == selectedIndex {
@@ -170,14 +219,10 @@ struct MultipleChoiceView: View {
         return Color(.systemBackground).opacity(0.4)
     }
 
-    private func optionTextColor(_ index: Int) -> Color {
+    private func optionTextColor(_ index: Int, correctIndex: Int) -> Color {
         guard showResult else { return .primary }
-        if index == questions[currentIndex].correctIndex {
-            return .green
-        }
-        if index == selectedIndex {
-            return .red
-        }
+        if index == correctIndex { return .green }
+        if index == selectedIndex { return .red }
         return .secondary
     }
 
@@ -186,22 +231,7 @@ struct MultipleChoiceView: View {
         selectedIndex = nil
         showResult = false
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            currentIndex = (currentIndex + 1) % questions.count
-            if currentIndex == 0 {
-                questions.shuffle()
-            }
             showQuestion = true
         }
-    }
-
-    private func loadQuestions() {
-        let jsonFile = language == .italian ? "mc_questions" : "mc_questions_de"
-        guard let url = Bundle.main.url(forResource: jsonFile, withExtension: "json"),
-              let data = try? Data(contentsOf: url),
-              let loaded = try? JSONDecoder().decode([MCQuestion].self, from: data) else {
-            return
-        }
-        questions = loaded.shuffled()
-        currentIndex = 0
     }
 }
