@@ -155,11 +155,6 @@
     "category": "scienzaNatura"
   },
   {
-    "text": "Die Erde ist der einzige Planet mit Leben?",
-    "answer": false,
-    "category": "scienzaNatura"
-  },
-  {
     "text": "Wasser besteht aus Wasserstoff und Sauerstoff?",
     "answer": true,
     "category": "scienzaNatura"
@@ -230,11 +225,6 @@
     "category": "scienzaNatura"
   },
   {
-    "text": "Glas ist eine amorphe Flüssigkeit?",
-    "answer": true,
-    "category": "scienzaNatura"
-  },
-  {
     "text": "Ein Lichtjahr ist eine Entfernungseinheit?",
     "answer": true,
     "category": "scienzaNatura"
@@ -277,11 +267,6 @@
   {
     "text": "Beyoncé ist eine Rapperin?",
     "answer": false,
-    "category": "popCulture"
-  },
-  {
-    "text": "Der Film 'Avengers: Endgame' ist der höchste Einspieler aller Zeiten?",
-    "answer": true,
     "category": "popCulture"
   },
   {
@@ -473,5 +458,445 @@
     "text": "Die Renaissance hatte ihren Ursprung in Italien?",
     "answer": true,
     "category": "storia"
+  },
+  {
+    "text": "Harry Potter gehört zum Haus Gryffindor?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Harrys bester Freund heißt Neville Longbottom?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Hermine Granger ist muggelstämmig?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Harrys Patronus ist ein Hirsch?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Voldemort heißt Tom Vorlost Riddle?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Draco Malfoy gehört zum Haus Ravenclaw?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Der magische Sport auf Besen heißt Quidditch?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Hagrid ist der Lehrer für Zaubertränke?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Dumbledore ist der Schulleiter von Hogwarts?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Harrys Zauberstab enthält eine Phönixfeder?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Dobby ist ein Hauself?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Das Gleis nach Hogwarts ist Gleis 10 dreiviertel?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Snape war immer auf Dumbledores Seite?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Die Dementoren bewachen Askaban?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Der Sprechende Hut wollte Harry nach Slytherin schicken?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Der Stein der Weisen verwandelt Blei in Silber?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Sirius Black ist Harrys Pate?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Die Karte des Rumtreibers wurde von Dumbledore erstellt?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Neville Longbottom zerstört den letzten Horkrux?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Der Zauberspruch Expelliarmus dient zum Fliegen?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Fawkes ist Dumbledores Phönix?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Es gibt sieben Bücher in der Harry-Potter-Reihe?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Harrys Narbe hat die Form eines Blitzes?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Ron Weasley hat Angst vor Spinnen?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Voldemort hat fünf Horkruxe erschaffen?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Ginny Weasley ist Harry Potters Ehefrau?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Luna Lovegood gehört zum Haus Hufflepuff?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Der Lehrer für Verteidigung gegen die dunklen Künste wechselt jedes Jahr?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Der Goldene Schnatz ist 150 Punkte wert beim Quidditch?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Minerva McGonagall ist die Lehrerin für Verwandlung?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Hagrid wurde von Hogwarts verwiesen?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Der Tarnumhang gehörte Harrys Vater?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Lupin ist ein Vampir?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Sirius Blacks Animagus-Form ist ein Hund?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Fred Weasley stirbt in der Schlacht von Hogwarts?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Die Kammer des Schreckens enthält einen Drachen?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Der Basilisk kann mit seinem Blick töten?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Hermine benutzt im dritten Buch einen Zeitumkehrer?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Der Nimbus 2000 ist Harrys erster Besen?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Cedric Diggory gehört zum Haus Gryffindor?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Das Trimagische Turnier findet im vierten Buch statt?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Bellatrix Lestrange ist Draco Malfoys Tante?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Das Motto von Hogwarts ist auf Englisch?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Kreacher ist der Hauself der Familie Black?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Hagrid schenkt Harry eine Eule namens Hedwig?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Der Zauberspruch Lumos erzeugt einen Schutzschild?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Neville Longbottom wird Professor für Kräuterkunde?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Der Elderstab ist eines der Heiligtümer des Todes?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Peter Pettigrew ist ein Animagus, der sich in eine Katze verwandelt?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Dolores Umbridge arbeitet im Zaubereiministerium?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Der Orden des Phönix ist eine Geheimorganisation gegen Voldemort?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Einhornblut kann eine Person am Leben halten?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Die Peitschende Weide befindet sich in Hogsmeade?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Alastor Moody ist bekannt als Mad-Eye?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Dumbledores Armee wird im fünften Buch gegründet?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Der Feuerkelch wählt vier Champions für das Turnier?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Snape ist der Halbblutprinz?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Harry ist ein unbeabsichtigter Horkrux?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Karl von Bourbon zog 1734 durch die Porta Capuana in Neapel ein?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Das Theater San Carlo wurde in zwei Jahren, von 1735 bis 1737, erbaut?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Der Catasto Onciario wurde 1740 im Königreich Neapel eingeführt?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Antonio Genovesi hielt seine erste Universitätsvorlesung auf Latein?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Der Palast von Caserta wurde vom Architekten Luigi Vanvitelli entworfen?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Ferdinand IV. heiratete Maria Carolina von Österreich im Jahr 1768?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Die Chinea war eine Huldigung eines schwarzen Pferdes an den Papst?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Das Erdbeben von 1783 in Kalabrien forderte mindestens 30.000 Opfer?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Eleonora de Fonseca Pimentel leitete den Monitore Napoletano?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Kardinal Ruffo brach 1799 von Rom auf, um das Königreich zurückzuerobern?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Vincenzo Cuoco bezeichnete die Revolution von 1799 als 'passive Revolution'?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Das erste italienische Dampfschiff war die Ferdinando I im Jahr 1818?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Joachim Murat verkündete den Aufruf an die Italiener 1815 von Bologna aus?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Murat wurde am 13. Oktober 1815 in Pizzo in Kalabrien erschossen?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Das Gesetz vom 2. August 1806 schaffte die Feudalherrschaft im Königreich Neapel ab?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Die Manufaktur von San Leucio war auf Wollverarbeitung spezialisiert?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Die Brüder Bandiera landeten in Kalabrien an der Mündung des Flusses Neto?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Die erste italienische Eisenbahn verband Neapel mit Caserta?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Das Werk von Pietrarsa wurde 10 Jahre vor der Ansaldo gegründet?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Die sizilianische Revolution von 1848 brach am 12. Januar in Palermo aus?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Gaetano Filangieri schrieb 'Die Wissenschaft der Gesetzgebung' in 3 Bänden?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Die Seidenverarbeitung wurde unter den Normannen in Sizilien eingeführt?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Die napoleonische Kontinentalsperre förderte die Entwicklung der Baumwollfabrik von Egg?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Die Schlacht von Velletri 1744 wurde von den Österreichern gewonnen?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Pietro Giannone schrieb die 'Zivilgeschichte des Königreichs Neapel' 1723?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Das Königreich beider Sizilien entstand mit dem Gesetz vom 11. Dezember 1816?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Die Aufstände von 1820 im Mezzogiorno begannen in der Stadt Salerno?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Der Schweizer Johann Jakob Egg gründete eine Baumwollfabrik in Piedimonte d'Alife?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Ferdinand II. lehnte 1847 den Beitritt zum italienischen Zollverein ab?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Bei der Volkszählung 1861 hatte Süditalien mehr Industriearbeiter als der Norden?",
+    "answer": true,
+    "category": "italiaMeridionale"
   }
 ]

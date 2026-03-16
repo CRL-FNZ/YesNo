@@ -173,6 +173,13 @@ extension Language {
         case .german: return "Zurück"
         }
     }
+
+    var soundText: String {
+        switch self {
+        case .italian: return "Suoni"
+        case .german: return "Töne"
+        }
+    }
 }
 
 struct QuestionJSON: Codable {
@@ -192,6 +199,8 @@ enum Category: String, CaseIterable {
     case scienzaNatura
     case popCulture
     case storia
+    case harryPotter
+    case italiaMeridionale
 
     func displayName(for language: Language) -> String {
         switch self {
@@ -203,6 +212,10 @@ enum Category: String, CaseIterable {
             return language == .italian ? "Pop Culture" : "Popkultur"
         case .storia:
             return language == .italian ? "Storia" : "Geschichte"
+        case .harryPotter:
+            return language == .italian ? "Harry Potter" : "Harry Potter"
+        case .italiaMeridionale:
+            return language == .italian ? "Italia Meridionale" : "Süditalien"
         }
     }
 }
@@ -219,6 +232,8 @@ class GameState: ObservableObject {
     @Published var currentTurn: Int = 0
     @Published var gameMode: GameMode = .firstTo(points: 10)
     @Published var timeRemaining: Int? = nil
+    @Published var teamTimers: [Int] = []
+    @Published var eliminatedTeams: Set<Int> = []
     @Published var isGameOver: Bool = false
     var language: Language = .italian
     private var gameTimer: Timer?
@@ -236,10 +251,13 @@ class GameState: ObservableObject {
         self.currentQuestionIndex = 0
         self.currentTurn = 0
         self.isGameOver = false
+        self.eliminatedTeams = []
 
         if case .timedMode(let seconds) = gameMode {
+            self.teamTimers = Array(repeating: seconds, count: numberOfTeams)
             self.timeRemaining = seconds
         } else {
+            self.teamTimers = []
             self.timeRemaining = nil
         }
     }
@@ -279,25 +297,54 @@ class GameState: ObservableObject {
     }
 
     private func nextTurn() {
-        currentTurn = (currentTurn + 1) % scores.count
+        let teamCount = scores.count
+        var next = (currentTurn + 1) % teamCount
+
+        if case .timedMode = gameMode {
+            // Skip eliminated teams
+            var checked = 0
+            while eliminatedTeams.contains(next) && checked < teamCount {
+                next = (next + 1) % teamCount
+                checked += 1
+            }
+            // All teams eliminated
+            if eliminatedTeams.count >= teamCount {
+                isGameOver = true
+                return
+            }
+        }
+
+        currentTurn = next
         currentQuestionIndex += 1
         if currentQuestionIndex >= questions.count {
-            // Shuffle or end game
             questions.shuffle()
             currentQuestionIndex = 0
+        }
+
+        // Update timeRemaining to current team's timer
+        if case .timedMode = gameMode {
+            timeRemaining = teamTimers[currentTurn]
         }
     }
 
     func startTimer() {
         stopTimer()
-        guard case .timedMode = gameMode, timeRemaining != nil else { return }
+        guard case .timedMode = gameMode else { return }
+        timeRemaining = teamTimers[currentTurn]
         gameTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] timer in
             guard let self = self else { timer.invalidate(); return }
-            if let remaining = self.timeRemaining, remaining > 0 {
-                self.timeRemaining = remaining - 1
+            if self.teamTimers[self.currentTurn] > 0 {
+                self.teamTimers[self.currentTurn] -= 1
+                self.timeRemaining = self.teamTimers[self.currentTurn]
             } else {
-                self.isGameOver = true
-                timer.invalidate()
+                // This team is eliminated
+                self.eliminatedTeams.insert(self.currentTurn)
+                if self.eliminatedTeams.count >= self.scores.count {
+                    self.isGameOver = true
+                    timer.invalidate()
+                } else {
+                    self.nextTurn()
+                }
             }
         }
     }

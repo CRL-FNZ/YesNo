@@ -22,7 +22,8 @@ struct BurkardView: View {
             )
             .edgesIgnoringSafeArea(.all)
 
-            VStack(spacing: 16) {
+            VStack(spacing: 0) {
+                // Top bar
                 HStack {
                     Button(action: { currentView = .home }) {
                         HStack(spacing: 4) {
@@ -38,6 +39,8 @@ struct BurkardView: View {
                     Color.clear.frame(width: 70)
                 }
                 .padding(.horizontal)
+                .padding(.top, 8)
+                .padding(.bottom, 12)
 
                 if !questions.isEmpty {
                     Spacer()
@@ -47,6 +50,7 @@ struct BurkardView: View {
                         .textCase(.uppercase)
                         .tracking(2)
                         .foregroundColor(.secondary)
+                        .padding(.bottom, 8)
 
                     if let imageName = questions[currentIndex].image,
                        let uiImage = UIImage(named: imageName) ?? loadBundleImage(named: imageName) {
@@ -64,6 +68,7 @@ struct BurkardView: View {
                         .fontWeight(.medium)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 24)
+                        .padding(.top, 8)
                         .foregroundColor(.secondary)
                         .opacity(showQuestion ? 1 : 0)
                         .offset(y: showQuestion ? 0 : 20)
@@ -75,6 +80,7 @@ struct BurkardView: View {
                 Text(language.burkardSubtitle)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
+                    .padding(.bottom, 8)
 
                 Button(action: nextQuestion) {
                     HStack {
@@ -91,7 +97,6 @@ struct BurkardView: View {
                 .padding(.horizontal, 40)
                 .padding(.bottom, 20)
             }
-            .padding(.top)
         }
         .onAppear {
             loadQuestions()

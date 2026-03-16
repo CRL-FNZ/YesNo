@@ -8,6 +8,7 @@ struct GameSetupView: View {
     @State private var points: Int = 10
     @State private var seconds: Int = 60
     @State private var numberOfTeams: Int = 2
+    @State private var soundEnabled: Bool = true
 
     enum GameModeType {
         case firstTo, timedMode
@@ -35,11 +36,28 @@ struct GameSetupView: View {
 
             Text(gameState.language.modeText)
                 .font(.headline)
-            Picker("Tipo", selection: $gameModeType) {
-                Text(gameState.language.firstToText).tag(GameModeType.firstTo)
-                Text(gameState.language.timedText).tag(GameModeType.timedMode)
+            HStack(spacing: 12) {
+                Button(action: { gameModeType = .firstTo }) {
+                    Text(gameState.language.firstToText)
+                        .font(.body)
+                        .fontWeight(gameModeType == .firstTo ? .bold : .regular)
+                        .padding(.vertical, 10)
+                        .frame(maxWidth: .infinity)
+                        .background(gameModeType == .firstTo ? Color.blue : Color.gray.opacity(0.2))
+                        .foregroundColor(gameModeType == .firstTo ? .white : .primary)
+                        .cornerRadius(10)
+                }
+                Button(action: { gameModeType = .timedMode }) {
+                    Text(gameState.language.timedText)
+                        .font(.body)
+                        .fontWeight(gameModeType == .timedMode ? .bold : .regular)
+                        .padding(.vertical, 10)
+                        .frame(maxWidth: .infinity)
+                        .background(gameModeType == .timedMode ? Color.blue : Color.gray.opacity(0.2))
+                        .foregroundColor(gameModeType == .timedMode ? .white : .primary)
+                        .cornerRadius(10)
+                }
             }
-            .pickerStyle(SegmentedPickerStyle())
 
             if gameModeType == .firstTo {
                 Stepper("\(gameState.language.pointsText): \(points)", value: $points, in: 1...50)
@@ -54,6 +72,11 @@ struct GameSetupView: View {
                     Text("\(num)").tag(num)
                 }
             }
+
+            Toggle(gameState.language.soundText, isOn: $soundEnabled)
+                .onChange(of: soundEnabled) { _, newValue in
+                    SoundManager.shared.soundEnabled = newValue
+                }
 
             Button(action: startGame) {
                 Text(gameState.language.startGameText)

@@ -21,7 +21,8 @@ struct ThinkView: View {
             )
             .edgesIgnoringSafeArea(.all)
 
-            VStack(spacing: 30) {
+            VStack(spacing: 0) {
+                // Top bar
                 HStack {
                     Button(action: { currentView = .home }) {
                         HStack(spacing: 4) {
@@ -34,11 +35,13 @@ struct ThinkView: View {
                     Text(language.thinkTitle)
                         .font(.headline)
                     Spacer()
-                    // Balance the back button width
                     Color.clear.frame(width: 70)
                 }
                 .padding(.horizontal)
+                .padding(.top, 8)
+                .padding(.bottom, 12)
 
+                // Question centered
                 Spacer()
 
                 if !questions.isEmpty {
@@ -69,9 +72,11 @@ struct ThinkView: View {
 
                 Spacer()
 
+                // Bottom
                 Text(language.thinkSubtitle)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
+                    .padding(.bottom, 8)
 
                 Button(action: nextQuestion) {
                     HStack {
@@ -88,7 +93,6 @@ struct ThinkView: View {
                 .padding(.horizontal, 40)
                 .padding(.bottom, 20)
             }
-            .padding(.top)
         }
         .onAppear {
             loadQuestions()

@@ -155,11 +155,6 @@
     "category": "scienzaNatura"
   },
   {
-    "text": "Il pianeta Terra è l'unico con vita?",
-    "answer": false,
-    "category": "scienzaNatura"
-  },
-  {
     "text": "L'acqua è composta da idrogeno e ossigeno?",
     "answer": true,
     "category": "scienzaNatura"
@@ -230,11 +225,6 @@
     "category": "scienzaNatura"
   },
   {
-    "text": "Il vetro è un liquido amorfo?",
-    "answer": true,
-    "category": "scienzaNatura"
-  },
-  {
     "text": "Un anno luce è una misura di distanza?",
     "answer": true,
     "category": "scienzaNatura"
@@ -277,11 +267,6 @@
   {
     "text": "Beyoncé è una rapper?",
     "answer": false,
-    "category": "popCulture"
-  },
-  {
-    "text": "Il film 'Avengers: Endgame' è il più alto incasso di sempre?",
-    "answer": true,
     "category": "popCulture"
   },
   {
@@ -498,5 +483,445 @@
     "text": "Il Rinascimento ebbe origine in Italia?",
     "answer": true,
     "category": "storia"
+  },
+  {
+    "text": "Harry Potter appartiene alla casa di Grifondoro?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Il miglior amico di Harry si chiama Neville Paciock?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Hermione Granger è una nata Babbana?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Il Patronus di Harry è un cervo?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Voldemort si chiama Tom Marvolo Riddle?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Draco Malfoy appartiene alla casa di Corvonero?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Lo sport magico giocato sulle scope si chiama Quidditch?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Hagrid è il professore di Pozioni?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Silente è il preside di Hogwarts?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "La bacchetta di Harry contiene una piuma di fenice?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Dobby è un elfo domestico?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Il binario per Hogwarts è il 10 e tre quarti?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Piton è stato sempre dalla parte di Silente?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "I Dissennatori sorvegliano Azkaban?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Il Cappello Parlante voleva mettere Harry a Serpeverde?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "La Pietra Filosofale trasforma il piombo in argento?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Sirius Black è il padrino di Harry?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "La Mappa del Malandrino è stata creata da Silente?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Neville Paciock distrugge l'ultimo Horcrux?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "L'incantesimo Expelliarmus serve per volare?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Fanny è la fenice di Silente?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Ci sono sette libri nella saga di Harry Potter?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "La cicatrice di Harry ha la forma di un fulmine?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Ron Weasley ha paura dei ragni?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Voldemort ha creato cinque Horcrux?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Ginny Weasley è la moglie di Harry Potter?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Luna Lovegood appartiene alla casa di Tassorosso?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Il professore di Difesa contro le Arti Oscure cambia ogni anno?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Il Boccino d'Oro vale 150 punti a Quidditch?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Minerva McGranitt è l'insegnante di Trasfigurazione?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Hagrid è stato espulso da Hogwarts?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Il Mantello dell'Invisibilità apparteneva al padre di Harry?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Lupin è un vampiro?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "La forma Animagus di Sirius Black è un cane?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Fred Weasley muore durante la Battaglia di Hogwarts?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "La Camera dei Segreti contiene un drago?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Il Basilisco può uccidere con lo sguardo?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Hermione usa una Giratempo nel terzo libro?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "La Nimbus 2000 è la prima scopa di Harry?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Cedric Diggory appartiene alla casa di Grifondoro?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Il Torneo Tremaghi si svolge nel quarto libro?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Bellatrix Lestrange è la zia di Draco Malfoy?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Il motto di Hogwarts è in inglese?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Kreacher è l'elfo domestico della famiglia Black?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Hagrid regala a Harry una civetta di nome Edvige?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "L'incantesimo Lumos crea uno scudo protettivo?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Neville Paciock diventa professore di Erbologia?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "La Bacchetta di Sambuco è uno dei Doni della Morte?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Peter Minus è un Animagus che si trasforma in gatto?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Dolores Umbridge lavora al Ministero della Magia?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "L'Ordine della Fenice è un'organizzazione segreta contro Voldemort?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Il sangue di unicorno può tenere in vita una persona?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Il Platano Picchiatore si trova a Hogsmeade?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Alastor Moody è conosciuto come Malocchio?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "L'Armata di Silente viene fondata nel quinto libro?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Il Calice di Fuoco sceglie quattro campioni per il Torneo?",
+    "answer": false,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Piton è il Principe Mezzosangue?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Harry è un Horcrux involontario?",
+    "answer": true,
+    "category": "harryPotter"
+  },
+  {
+    "text": "Carlo di Borbone entrò a Napoli nel 1734 da Porta Capuana?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Il teatro San Carlo fu costruito in due anni, dal 1735 al 1737?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Il catasto onciario fu introdotto nel Regno di Napoli nel 1740?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Antonio Genovesi tenne la sua prima lezione universitaria in latino?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "La Reggia di Caserta fu progettata dall'architetto Luigi Vanvitelli?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Ferdinando IV sposò Maria Carolina d'Austria nel 1768?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "La chinea era un omaggio di un cavallo nero al pontefice?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Il terremoto del 1783 in Calabria causò almeno 30 mila vittime?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Eleonora de Fonseca Pimentel dirigeva il Monitore napoletano?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Il cardinale Ruffo partì da Roma per riconquistare il Regno nel 1799?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Vincenzo Cuoco definì la rivoluzione del 1799 una 'rivoluzione passiva'?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "La prima nave a vapore italiana fu il piroscafo Ferdinando I nel 1818?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Gioacchino Murat lanciò il Proclama agli Italiani da Bologna nel 1815?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Murat fu fucilato a Pizzo in Calabria il 13 ottobre 1815?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "La legge del 2 agosto 1806 abolì la feudalità nel Regno di Napoli?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "La manifattura di San Leucio era specializzata nella lavorazione della lana?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "I fratelli Bandiera sbarcarono in Calabria alla foce del fiume Neto?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "La prima ferrovia italiana collegava Napoli a Caserta?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Lo stabilimento di Pietrarsa fu avviato 10 anni prima dell'Ansaldo?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "La rivoluzione siciliana del 1848 scoppiò il 12 gennaio a Palermo?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Gaetano Filangieri scrisse 'La Scienza della Legislazione' in 3 volumi?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "La lavorazione della seta fu introdotta in Sicilia sotto i Normanni?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Il blocco continentale napoleonico favorì lo sviluppo del cotonificio di Egg?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "La battaglia di Velletri del 1744 fu vinta dagli austriaci?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Pietro Giannone scrisse la 'Istoria Civile del Regno di Napoli' nel 1723?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Il Regno delle Due Sicilie nacque con la legge dell'11 dicembre 1816?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "I moti del 1820 nel Mezzogiorno partirono dalla città di Salerno?",
+    "answer": false,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Lo svizzero Johann Jakob Egg fondò un cotonificio a Piedimonte d'Alife?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Ferdinando II rifiutò di aderire alla lega doganale italiana nel 1847?",
+    "answer": true,
+    "category": "italiaMeridionale"
+  },
+  {
+    "text": "Al censimento del 1861 il Mezzogiorno aveva più addetti manifatturieri del Nord?",
+    "answer": true,
+    "category": "italiaMeridionale"
   }
 ]

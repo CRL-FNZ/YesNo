@@ -2,33 +2,120 @@ import SwiftUI
 
 struct ResultView: View {
     @ObservedObject var gameState: GameState
+    @ObservedObject var themeManager: ThemeManager
     @Binding var currentView: ViewType
+    @State private var showConfetti = false
+    @State private var scoresVisible: [Bool] = []
+    @State private var trophyScale: CGFloat = 0.0
+
+    private var theme: AppTheme { themeManager.currentTheme }
+
+    private var winnerIndex: Int? {
+        guard let maxScore = gameState.scores.max(), maxScore > 0 else { return nil }
+        return gameState.scores.firstIndex(of: maxScore)
+    }
 
     var body: some View {
-        VStack(spacing: 20) {
-            Text(gameState.language.resultsTitle)
-                .font(.largeTitle)
+        ZStack {
+            LinearGradient(colors: theme.backgroundColor, startPoint: .topLeading, endPoint: .bottomTrailing)
+                .edgesIgnoringSafeArea(.all)
 
-            ForEach(0..<gameState.scores.count, id: \.self) { index in
-                HStack {
-                    Text("\(gameState.language.teamText) \(index + 1)")
-                    Spacer()
-                    Text("\(gameState.scores[index]) \(gameState.language.pointsSuffix)")
+            VStack(spacing: 24) {
+                Spacer()
+
+                // Trophy for winner
+                if let winner = winnerIndex {
+                    let avatar = themeManager.teamAvatars[winner % themeManager.teamAvatars.count]
+                    VStack(spacing: 8) {
+                        Image(systemName: "trophy.fill")
+                            .font(.system(size: 60))
+                            .foregroundColor(.yellow)
+                            .scaleEffect(trophyScale)
+                        Image(systemName: avatar.rawValue)
+                            .font(.title)
+                            .foregroundColor(avatar.color)
+                        Text("\(gameState.language.teamText) \(winner + 1)")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .foregroundColor(theme.textColor)
+                    }
                 }
-                .font(.title)
-            }
 
-            Button(action: {
-                currentView = .home
-            }) {
-                Text(gameState.language.newGameText)
-                    .font(.title)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+                Text(gameState.language.resultsTitle)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(theme.textColor)
+
+                VStack(spacing: 12) {
+                    ForEach(0..<gameState.scores.count, id: \.self) { index in
+                        let avatar = themeManager.teamAvatars[index % themeManager.teamAvatars.count]
+                        let isWinner = index == winnerIndex
+                        HStack {
+                            Image(systemName: avatar.rawValue)
+                                .foregroundColor(avatar.color)
+                                .font(.title2)
+                            Text("\(gameState.language.teamText) \(index + 1)")
+                                .fontWeight(isWinner ? .bold : .regular)
+                            Spacer()
+                            Text("\(gameState.scores[index]) \(gameState.language.pointsSuffix)")
+                                .fontWeight(.bold)
+                        }
+                        .font(.title2)
+                        .foregroundColor(theme.textColor)
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 12)
+                                .fill(isWinner ? theme.primaryColor.opacity(0.3) : Color.white.opacity(0.1))
+                        )
+                        .scaleEffect(scoresVisible.indices.contains(index) && scoresVisible[index] ? 1 : 0.8)
+                        .opacity(scoresVisible.indices.contains(index) && scoresVisible[index] ? 1 : 0)
+                    }
+                }
+                .padding(.horizontal)
+
+                Spacer()
+
+                Button(action: {
+                    currentView = .home
+                }) {
+                    Text(gameState.language.newGameText)
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(theme.primaryColor)
+                        .foregroundColor(.white)
+                        .cornerRadius(14)
+                }
+                .padding(.horizontal, 40)
+                .padding(.bottom, 20)
+            }
+            .padding()
+
+            if showConfetti {
+                ConfettiView()
             }
         }
-        .padding()
+        .onAppear {
+            SoundManager.shared.playVictory()
+            scoresVisible = Array(repeating: false, count: gameState.scores.count)
+
+            // Animate trophy
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.4).delay(0.2)) {
+                trophyScale = 1.0
+            }
+
+            // Animate scores one by one
+            for i in 0..<gameState.scores.count {
+                withAnimation(.spring(response: 0.4, dampingFraction: 0.6).delay(0.5 + Double(i) * 0.2)) {
+                    scoresVisible[i] = true
+                }
+            }
+
+            // Show confetti
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                showConfetti = true
+            }
+        }
     }
 }
